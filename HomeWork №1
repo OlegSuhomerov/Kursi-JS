@@ -1,0 +1,17 @@
+var Person1 = {         //Введем первый объект Person1 и его св-во 
+  name: "Гена",
+  age: 30,
+  growth: 183,
+  weight: 63
+};   
+
+var Person2 = {}; // Ввели второй пустой объект
+
+for (var coppy in Person1) {   // Скопируем в него все свойства из Person1
+  Person2[coppy] = Person1[coppy];
+}
+
+// Теперь Person2 - Полностью независимая копия
+Person2.name = "Алехандро"; // Изменили свойство в Person2
+
+alert( Person1.name ); // Как и было первоначально Гена
