@@ -18,7 +18,7 @@ function changeInfo(out) {
     humudity.innerHTML = out.main.humidity;
     wind.innerHTML     = out.wind.speed;
     cloud.innerHTML    = out.clouds.all;
-    desc.innerHTML     = '(' + out.weather[0].description + ')';
+    wind.innerHTML     = '(' + out.weather[0].description + ')';
     coords.innerHTML   = '(' + out.coord.lon + '; ' + out.coord.lat + ')';
     image.src          = 'http://openweathermap.org/img/w/' + out.weather[0].icon + '.png';
 }
